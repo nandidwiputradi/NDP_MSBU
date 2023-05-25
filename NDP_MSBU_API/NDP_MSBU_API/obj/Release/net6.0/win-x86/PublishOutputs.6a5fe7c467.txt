@@ -1,0 +1,6 @@
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.Development.json
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.json
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\NDP_MSBU_API.pdb
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\aspnetcorev2_inprocess.dll
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\Microsoft.Data.SqlClient.SNI.dll
+D:\asp\NDP_MSBU_API\NDP_MSBU_API\obj\Release\net6.0\win-x86\PubTmp\Out\NDP_MSBU_API.exe

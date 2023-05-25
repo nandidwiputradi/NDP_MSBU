@@ -1,0 +1,96 @@
+﻿@model NDP_MSBU.Models.BKPBViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .btn-warning {
+        color: white;
+        background-color: orange;
+    }
+</style>
+<br />
+
+<div class="row">
+    <div class="col">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <label for="agreementNumber" class="form-label">Agreement Number</label>                            
+                            @Html.TextBoxFor(c => c.agreementNumber, new { placeholder = "Input Agreement Number", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="branchId" class="form-label">Branch Id</label>                            
+                            @Html.TextBoxFor(c => c.branchId, new { placeholder = "Input Branch Id", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="bpkbNumber" class="form-label">No. BPKB</label>                            
+                            @Html.TextBoxFor(c => c.bpkbNumber, new { placeholder = "Input No. BPKB", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="bpkbDateIn" class="form-label">Tanggal BPKB In</label>                            
+                            @Html.TextBoxFor(c => c.bpkbDateIn, new { @class = "form-control", type = "date" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="bpkbDate" class="form-label">Tanggal BPKB</label>                            
+                            @Html.TextBoxFor(c => c.bpkbDate, new { @class = "form-control", type = "date" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="fakturNumber" class="form-label">No. Faktur</label>                            
+                            @Html.TextBoxFor(c => c.fakturNumber, new { placeholder = "Input No. Faktur", @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <label for="fakturDate" class="form-label">Tanggal Faktur</label>
+                            @Html.TextBoxFor(c => c.fakturDate, new { @class = "form-control", type = "date" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="policeNumber" class="form-label">Nomor Polisi</label>                            
+                            @Html.TextBoxFor(c => c.policeNumber, new { placeholder = "Input Nomor Polisi", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="locationId" class="form-label">Lokasi Penyimpanan</label>
+                            @Html.DropDownListFor(c => c.locationId, new SelectList(Model.storageLocations, "value", "text"), "Select Lokasi Penyimpanan", new { @class = "form-control"})
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col d-grid gap-2">
+                    <button class="btn btn-warning" type="button">Cancel</button>
+                </div>
+                <div class="col d-grid gap-2">
+                    <button class="btn btn-warning" type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

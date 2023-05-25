@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NDP_MSBU_API.props" />
+</Project>
